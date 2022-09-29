@@ -11,4 +11,8 @@ cat.general.cui_count_limit = 100000000
 # Is unlink full
 cat.general.full_unlink = False
 # use this spacy model
-cat.general.spacy_model = 'en_core_web_md'
+cat.general.spacy_model = 'nl_core_news_lg'
+# This handles diacritics, which are common in Dutch language but not in English language.
+cat.general.diacritics = True
+# This distinguishes "ALS" (the disease) from "als" (voegwoord en voorzetsel).
+cat.ner.check_upper_case_names = True

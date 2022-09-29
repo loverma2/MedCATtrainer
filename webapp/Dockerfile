@@ -22,5 +22,5 @@ RUN npm install && npm run build
 WORKDIR /home/api
 RUN pip install pip --upgrade 
 RUN pip install -r /home/requirements.txt
-RUN python -m spacy download en_core_web_md
+RUN python -m spacy download nl_core_news_lg
 RUN chmod a+x /home/run.sh
